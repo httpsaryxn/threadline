@@ -1,0 +1,66 @@
+/* Dashboard — Global Styles */
+@import "tailwindcss";
+
+:root {
+  --sidebar-bg: #0E0E14;
+  --sidebar-border: rgba(255,255,255,0.06);
+  --content-bg: #0A0A0F;
+  --card-bg: #111118;
+  --border: rgba(255,255,255,0.08);
+  --brand: #7C3AED;
+  --brand-light: #A78BFA;
+  --text-primary: #F0F0FF;
+  --text-muted: #777788;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: var(--content-bg);
+  color: var(--text-primary);
+  font-family: system-ui, -apple-system, sans-serif;
+  font-size: 14px;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar { width: 4px; height: 4px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: var(--brand); border-radius: 2px; }
+
+.gradient-text {
+  background: linear-gradient(135deg, #A78BFA 0%, #818CF8 50%, #EC4899 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Channel item hover */
+.channel-item {
+  transition: background 0.15s ease, color 0.15s ease;
+}
+.channel-item:hover {
+  background: rgba(255,255,255,0.04);
+}
+.channel-item.active {
+  background: rgba(124,58,237,0.2);
+  color: #A78BFA;
+}
+
+/* Message input */
+.msg-input {
+  background: rgba(255,255,255,0.05);
+  border: 1px solid var(--border);
+  color: var(--text-primary);
+  transition: border-color 0.2s ease;
+}
+.msg-input:focus {
+  outline: none;
+  border-color: var(--brand);
+}
+.msg-input::placeholder {
+  color: var(--text-muted);
+}

@@ -1,0 +1,40 @@
+{
+  "name": "threadline-widget",
+  "version": "0.1.0",
+  "description": "ThreadLine embeddable React widget",
+  "license": "Apache-2.0",
+  "type": "module",
+  "main": "./dist/threadline-widget.cjs",
+  "module": "./dist/threadline-widget.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/threadline-widget.js",
+      "require": "./dist/threadline-widget.cjs",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "files": ["dist"],
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "lint": "eslint src --ext ts,tsx"
+  },
+  "peerDependencies": {
+    "react": ">=18",
+    "react-dom": ">=18"
+  },
+  "devDependencies": {
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "@vitejs/plugin-react": "^4.3.4",
+    "typescript": "^5.6.3",
+    "vite": "^6.0.0",
+    "vite-plugin-dts": "^4.3.0"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.47.0",
+    "lucide-react": "^0.469.0"
+  }
+}
