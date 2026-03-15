@@ -1,0 +1,24 @@
+{
+  "name": "threadline",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Internal communication infrastructure embedded inside company websites",
+  "license": "Apache-2.0",
+  "workspaces": [
+    "landing",
+    "sdk"
+  ],
+  "scripts": {
+    "dev:landing": "bun run --cwd landing dev",
+    "dev:sdk": "bun run --cwd sdk dev",
+    "build:landing": "bun run --cwd landing build",
+    "build:sdk": "bun run --cwd sdk build",
+    "lint": "bun run --cwd landing lint",
+    "format": "prettier --write \"**/*.{ts,tsx,js,jsx,json,css,md}\""
+  },
+  "devDependencies": {
+    "prettier": "^3.3.3",
+    "@typescript-eslint/parser": "^8.0.0",
+    "@typescript-eslint/eslint-plugin": "^8.0.0"
+  }
+}

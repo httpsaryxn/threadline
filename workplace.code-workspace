@@ -1,0 +1,9 @@
+{
+	"folders": [
+		{
+			"name": "P2P Live Share (threadline-ixpcjs)",
+			"uri": "p2p-live-share://trystero.threadline-ixpcjs.mqtt/"
+		}
+	],
+	"settings": {}
+}
